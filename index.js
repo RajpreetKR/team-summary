@@ -35,7 +35,8 @@ function createManager() {
     .then(data => {
         console.log(data);
         // we create a new INSTANCE of a MANAGER OBJECT
-
+        let newManager = new Manager(data.name, data.id, data.email, data.officeNumber)
+        console.log("New Manager: ", newManager)
         // WE ADD THE NEW MANAGER TO OUR TEAM
     })
     .catch(error => {
