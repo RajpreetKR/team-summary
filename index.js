@@ -17,19 +17,24 @@ function createManager() {
 
     inquirer.prompt([
         {
-            type: 'input',
-            name: 'managerName',
-            message: 'What is the managers name?'
+            type: "input",
+            name: "managerName",
+            message: "What is the manager's name?"
         },
         {
-            type: 'input',
-            name: 'managerId',
-            message: 'What is the managers id?'
+            type: "input",
+            name: "managerId",
+            message: "What is the manager's id?"
         },
         {
-            type: 'input',
-            name: 'managerEmail',
-            message: 'What is the managers email?'
+            type: "input",
+            name: "managerEmail",
+            message: "What is the manager's email?"
+        },
+        {
+            type: "input",
+            name: "officeNo",
+            message: "What is the manager's office number?"
         },
     ])
     .then(data => {
